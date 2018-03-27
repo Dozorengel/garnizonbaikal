@@ -232,13 +232,12 @@ a {
 // #portfolio {
 //   background-color: black;
 // }
-@media(min-width:992px) {
-    .content-section {
-        padding-top: 200px;
-        padding-bottom: 200px;
-    }
-}
-
+// @media(min-width:992px) {
+//     .content-section {
+//         padding-top: 200px;
+//         padding-bottom: 200px;
+//     }
+// }
 .btn {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -380,4 +379,8 @@ img::-moz-selection {
 .logo {
     width: auto;
     height: 30px;
+}
+
+.card-deck {
+    color: black;
 }
