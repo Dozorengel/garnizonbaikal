@@ -197,11 +197,6 @@ a {
     padding-bottom: 150px;
 }
 
-.media-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-
 #about {
     // background: url('../img/logo_vk_old.jpg') no-repeat center center scroll;
     // background-color: $camouflage-color;
@@ -221,16 +216,17 @@ a {
     background-size: cover;
 }
 
-#map {
-    width: 100%;
-    height: 300px;
+#map.text-center {
+    // width: 100%;
+    height: 400px;
 }
 
 // #map_info {
 //   background-color: $camouflage-color;
 // }
 #contact {
-    background: url('../img/Texture3.jpg') no-repeat center center scroll; // background-color: gray;
+    // background: url('../img/Texture3.jpg') no-repeat center center scroll; 
+    background-color: #222;
 }
 
 // #portfolio {
@@ -240,9 +236,6 @@ a {
     .content-section {
         padding-top: 200px;
         padding-bottom: 200px;
-    }
-    #map {
-        height: 350px;
     }
 }
 
@@ -257,22 +250,22 @@ a {
 }
 
 .btn-default {
-    color: $primary;
-    border: 1px solid $primary;
+    color: $white;
+    border: 1px solid $white;
     background-color: transparent;
     &:focus,
     &:hover {
         color: black;
-        border: 1px solid $primary;
+        border: 1px solid $white;
         outline: none;
-        background-color: $primary;
+        background-color: $white;
     }
 }
 
 ul.banner-social-buttons {
     margin-top: 0;
     @media(max-width: 1199px) {
-        margin-top: 15px;
+        margin: 15px;
     }
     @media(max-width:767px) {
         li {
@@ -287,7 +280,7 @@ ul.banner-social-buttons {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 0 0 30px 0;
     p {
         font-size: 14px;
         margin: 0;
@@ -370,14 +363,17 @@ img::-moz-selection {
 }
 
 @media (max-width: 767px) {
-    .oz-body-wrap {
-        margin: 30px;
+    footer {
+        padding: 0 0 30px 0;
     }
 }
 
 @media (max-width: 575px) {
     .oz-body-wrap {
         margin: 10px;
+    }
+    footer {
+        padding: 0 0 10px 0;
     }
 }
 
