@@ -1,13 +1,9 @@
 @import "bootstrap/functions";
 @import "bootstrap/variables";
-
 //
 // Grid mixins
 //
-
 @import "bootstrap/mixins/breakpoints";
-
-
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'portfolio.scss';
@@ -54,7 +50,7 @@ h4,
 h5,
 h6 {
     font-family: 'B52', 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
+    // font-weight: 700;
     margin: 0 0 35px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -207,33 +203,39 @@ a {
 }
 
 .content-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .media-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #about {
-    // background: url('../img/logo_vk_old.jpg') no-repeat center center scroll;
-    // background-color: $camouflage-color;
-    background-color: $camouflage-color; // -webkit-background-size: cover;
+    background: url('../img/Texture3.jpg') no-repeat center center scroll; // background-color: $camouflage-color;
+    // background-color: $camouflage-color; // -webkit-background-size: cover;
     // -moz-background-size: cover;
     // -o-background-size: cover;
     // background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .download-section {
     color: white;
-    background: url('../img/Texture3.jpg') no-repeat center center scroll;
+    background: url('../img/gray2.jpg') no-repeat center center scroll;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #map.text-center {
@@ -245,13 +247,15 @@ a {
 //   background-color: $camouflage-color;
 // }
 #contact {
-    background: url('../img/gray.jpg') no-repeat center center scroll; 
-    // background-color: #222;/* Create the parallax scrolling effect */
+    background: url('../img/gray.jpg') no-repeat center center scroll; // background-color: #222;/* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative; 
+    position: relative;
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 0;
+    }
 }
 
 // #portfolio {
@@ -382,13 +386,7 @@ img::-moz-selection {
 .oz-body-wrap {
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
     margin: 50px;
-    position: relative; 
-    //   @include media-breakpoint-down (sm) {
-    //   margin: 30px;
-    // }
-    // @include media-breakpoint-down (xs) {
-    //   margin: 10px;
-    // }
+    position: relative;
 }
 
 @include media-breakpoint-down(sm) {
@@ -415,18 +413,20 @@ img::-moz-selection {
 }
 
 .card-columns {
-      @include media-breakpoint-up(lg) {
-        column-count: 2;
-      }
-      @include media-breakpoint-down(lg) {
+    @include media-breakpoint-up(md) {
+        column-count: 3;
+        height: 450px;
+    }
+    @include media-breakpoint-down(md) {
         column-count: 1;
-      }
+        height: auto;
+    }
     color: black;
     .card-text {
-        a{
-            color:white;
+        a {
+            color: white;
         }
-        a:hover{
+        a:hover {
             text-decoration: underline
         }
     }

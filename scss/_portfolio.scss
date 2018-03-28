@@ -13,7 +13,7 @@
     text-align: center;
     opacity: 0;
     color: $white;
-    background: fade-out($primary, .1);
+    background: fade-out(dimgrey, .4);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
@@ -21,16 +21,16 @@
       width: 100%;
       transform: translateY(-50%);
       text-align: center;
-      .project-category,
+      // .project-category,
       .project-name {
         padding: 0 15px;
         @include sans-serif-font;
       }
-      .project-category {
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-      }
+      // .project-category {
+      //   font-size: 14px;
+      //   font-weight: 600;
+      //   text-transform: uppercase;
+      // }
       .project-name {
         font-size: 18px;
       }
@@ -47,9 +47,9 @@
   @media (min-width: 768px) {
     .portfolio-box-caption {
       .portfolio-box-caption-content {
-        .project-category {
-          font-size: 16px;
-        }
+        // .project-category {
+        //   font-size: 16px;
+        // }
         .project-name {
           font-size: 22px;
         }
