@@ -264,7 +264,7 @@ a:focus, a:hover {
 
 .download-section {
   color: white;
-  background: url("../img/gray2.jpg") no-repeat center center scroll;
+  background: url("../img/photo4.jpg") no-repeat center center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -274,6 +274,7 @@ a:focus, a:hover {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 #map.text-center {
@@ -472,4 +473,23 @@ img::-moz-selection {
 
 .card-columns .card-text a:hover {
   text-decoration: underline;
+}
+
+.showcase {
+  background-color: black;
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
 }
