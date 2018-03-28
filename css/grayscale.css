@@ -254,14 +254,6 @@ a:focus, a:hover {
   padding-bottom: 200px;
 }
 
-#about {
-  background: url("../img/Texture3.jpg") no-repeat center center scroll;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .download-section {
   color: white;
   background: url("../img/photo4.jpg") no-repeat center center scroll;
