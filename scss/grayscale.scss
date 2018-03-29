@@ -49,8 +49,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'B52', 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    // font-weight: 700;
+    font-family: 'B52', 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif; // font-weight: 700;
     margin: 0 0 35px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -223,7 +222,6 @@ a {
 //     background-position: center;
 //     background-repeat: no-repeat;
 // }
-
 .download-section {
     color: white;
     background: url('../img/photo4.jpg') no-repeat center center scroll;
@@ -422,8 +420,7 @@ img::-moz-selection {
         column-count: 1;
         height: auto;
     }
-    color: black;
-    // .card-title {
+    color: black; // .card-title {
     //     border-style: solid;
     //     border-width: medium;
     //     border-radius: 5px;
@@ -439,18 +436,50 @@ img::-moz-selection {
 }
 
 .showcase {
+    background: url('../img/wall51.jpg') no-repeat center center scroll;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; // position: relative;
     background-color: black;
     .showcase-text {
-      padding: 3rem;
+        padding: 3rem;
     }
     .showcase-img {
-      min-height: 30rem;
-      background-size: cover;
+        min-height: 30rem;
+        background-size: cover;
     }
     @media (min-width: 768px) {
-      .showcase-text {
-        padding: 7rem;
-      }
+        .showcase-text {
+            padding: 7rem;
+        }
     }
-  }
-  
+}
+
+.features-icons {
+    .card-desk {
+        @include media-breakpoint-down(md) {
+            column-count: 1;
+            height: auto;
+        }
+    }
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .features-icons-item {
+        max-width: 20rem;
+        .features-icons-icon {
+            height: 7rem;
+            i {
+                font-size: 4.5rem;
+            }
+        }
+        &:hover {
+            .features-icons-icon {
+                i {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
