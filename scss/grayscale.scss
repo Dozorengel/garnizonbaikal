@@ -290,20 +290,8 @@ a {
 }
 
 ul.banner-social-buttons {
-    margin-top: 0;
-    @media(max-width: 1199px) {
-        margin: 15px;
-    }
-    @media(max-width:767px) {
-        li {
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
+    display: block;
+    margin-bottom: 20px;
 }
 
 footer {
