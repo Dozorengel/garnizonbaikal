@@ -404,16 +404,16 @@ img::-moz-selection {
   margin-bottom: 20px;
 }
 
-.video-area .video-content h3 {
+.video-area .video-content h2 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 26px;
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
 
 .video-area .video-content h4 {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .video-area .video-content .video-desc {
