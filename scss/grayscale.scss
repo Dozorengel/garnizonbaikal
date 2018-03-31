@@ -10,7 +10,6 @@
 // $camouflage-color: #343d23;
 $camouflage-color: #252b19;
 // $camouflage-color1: #596450; //gray
-
 /* font converted using font-converter.net. thank you! */
 
 @font-face {
@@ -68,7 +67,6 @@ p {
 
 a {
     -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     color: $primary;
     &:focus,
@@ -99,7 +97,6 @@ a {
     .navbar-nav {
         .nav-item {
             -webkit-transition: background 0.3s ease-in-out;
-            -moz-transition: background 0.3s ease-in-out;
             transition: background 0.3s ease-in-out;
             &:hover {
                 color: fade(white, 80%);
@@ -117,7 +114,6 @@ a {
         // padding-top: 20px;
         // padding-bottom: 20px;
         -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
         transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
         letter-spacing: 1px;
         border-bottom: none;
@@ -148,9 +144,6 @@ a {
     color: white;
     background: url('../img/photo2.jpg') no-repeat bottom center scroll;
     background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -187,7 +180,6 @@ a {
     margin-top: 15px;
     line-height: 45px;
     -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
     transition: background 0.3s ease-in-out;
     color: white;
     border: 2px solid white;
@@ -226,9 +218,6 @@ a {
     color: white;
     background: url('../img/photo4.jpg') no-repeat center center scroll;
     background-color: black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -270,7 +259,6 @@ a {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
     -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
     border-radius: 0;
@@ -314,6 +302,10 @@ footer {
     text-shadow: none;
 }
 
+img::-moz-selection {
+    background: transparent;
+}
+
 img::selection {
     background: transparent;
 }
@@ -348,6 +340,7 @@ img::-moz-selection {
         .video-desc {
             margin-top: 120px;
             text-align: right;
+            -ms-flex-item-align: end;
             align-self: flex-end;
         }
     }
@@ -371,6 +364,7 @@ img::-moz-selection {
 
 //--------- End video Area -------------//
 .oz-body-wrap {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
     margin: 50px;
     position: relative;
@@ -401,10 +395,12 @@ img::-moz-selection {
 
 .card-columns {
     @include media-breakpoint-up(md) {
+        -webkit-column-count: 3;
         column-count: 3;
         height: 450px;
     }
     @include media-breakpoint-down(md) {
+        -webkit-column-count: 1;
         column-count: 1;
         height: auto;
     }
@@ -449,6 +445,7 @@ img::-moz-selection {
 .features-icons {
     .card-desk {
         @include media-breakpoint-down(md) {
+            -webkit-column-count: 1;
             column-count: 1;
             height: auto;
         }
@@ -478,6 +475,7 @@ img::-moz-selection {
     border-radius: 5px;
     color: #fff;
     background: #587EA3;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
@@ -486,6 +484,7 @@ img::-moz-selection {
     border-radius: 5px;
     color: #fff;
     background: #F4731C;
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
@@ -494,6 +493,7 @@ img::-moz-selection {
     border-radius: 5px;
     color: #fff;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
 }
 
