@@ -278,6 +278,52 @@ a:focus, a:hover {
   }
 }
 
+#contact .card-columns {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  #contact .card-columns {
+    -webkit-column-count: 3;
+    column-count: 3;
+    height: 450px;
+  }
+}
+
+@media (max-width: 991px) {
+  #contact .card-columns {
+    -webkit-column-count: 1;
+    column-count: 1;
+    height: auto;
+  }
+}
+
+#contact .card-columns .card-text a {
+  color: white;
+}
+
+#contact .card-columns .card-text a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 576px) {
+  #portfolio .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  #portfolio .card-columns {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  #portfolio .card-columns {
+    column-count: 4;
+  }
+}
+
 .btn {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -418,34 +464,6 @@ img::-moz-selection {
 .logo {
   width: auto;
   height: 30px;
-}
-
-.card-columns {
-  color: black;
-}
-
-@media (min-width: 768px) {
-  .card-columns {
-    -webkit-column-count: 3;
-    column-count: 3;
-    height: 450px;
-  }
-}
-
-@media (max-width: 991px) {
-  .card-columns {
-    -webkit-column-count: 1;
-    column-count: 1;
-    height: auto;
-  }
-}
-
-.card-columns .card-text a {
-  color: white;
-}
-
-.card-columns .card-text a:hover {
-  text-decoration: underline;
 }
 
 .showcase {
