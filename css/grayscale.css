@@ -519,3 +519,27 @@ img::-moz-selection {
 .features-icons .features-icons-item:hover .features-icons-icon i {
   font-size: 5rem;
 }
+
+.vk {
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  background: #587EA3;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.odnoklassniki {
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  background: #F4731C;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.instagram {
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
