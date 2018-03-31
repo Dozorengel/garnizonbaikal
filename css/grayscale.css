@@ -483,6 +483,7 @@ img::-moz-selection {
 
 .showcase .showcase-img {
   min-height: 30rem;
+  background-position: center;
   background-size: cover;
 }
 
