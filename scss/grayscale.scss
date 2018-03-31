@@ -274,15 +274,17 @@ a {
 #portfolio {
     .card-columns {
         @include media-breakpoint-up(sm) {
+            -webkit-column-count: 2;
             column-count: 2;
         }
         @include media-breakpoint-up(md) {
+            -webkit-column-count: 3;
             column-count: 3;
         }
         @include media-breakpoint-up(lg) {
+            -webkit-column-count: 4;
             column-count: 4;
-        }
-        // .card-img{
+        } // .card-img{
         //     // height: 10%;
         //     width: 50%;
         // }
@@ -457,31 +459,8 @@ img::-moz-selection {
 }
 
 .features-icons {
-    .card-desk {
-        @include media-breakpoint-down(md) {
-            -webkit-column-count: 1;
-            column-count: 1;
-            height: auto;
-        }
-    }
     padding-top: 3rem;
     padding-bottom: 3rem;
-    .features-icons-item {
-        max-width: 20rem;
-        .features-icons-icon {
-            height: 7rem;
-            i {
-                font-size: 4.5rem;
-            }
-        }
-        &:hover {
-            .features-icons-icon {
-                i {
-                    font-size: 5rem;
-                }
-            }
-        }
-    }
 }
 
 .vk {

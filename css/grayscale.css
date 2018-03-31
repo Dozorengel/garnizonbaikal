@@ -308,18 +308,21 @@ a:focus, a:hover {
 
 @media (min-width: 576px) {
   #portfolio .card-columns {
+    -webkit-column-count: 2;
     column-count: 2;
   }
 }
 
 @media (min-width: 768px) {
   #portfolio .card-columns {
+    -webkit-column-count: 3;
     column-count: 3;
   }
 }
 
 @media (min-width: 992px) {
   #portfolio .card-columns {
+    -webkit-column-count: 4;
     column-count: 4;
   }
 }
@@ -495,30 +498,6 @@ img::-moz-selection {
 .features-icons {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-
-@media (max-width: 991px) {
-  .features-icons .card-desk {
-    -webkit-column-count: 1;
-    column-count: 1;
-    height: auto;
-  }
-}
-
-.features-icons .features-icons-item {
-  max-width: 20rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon {
-  height: 7rem;
-}
-
-.features-icons .features-icons-item .features-icons-icon i {
-  font-size: 4.5rem;
-}
-
-.features-icons .features-icons-item:hover .features-icons-icon i {
-  font-size: 5rem;
 }
 
 .vk {
