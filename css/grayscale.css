@@ -292,6 +292,14 @@ a:focus, a:hover {
 
 @media (max-width: 991px) {
   #contact .card-columns {
+    -webkit-column-count: 2;
+    column-count: 2;
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  #contact .card-columns {
     -webkit-column-count: 1;
     column-count: 1;
     height: auto;
