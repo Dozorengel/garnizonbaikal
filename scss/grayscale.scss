@@ -6,7 +6,7 @@
 @import "bootstrap/mixins/breakpoints";
 @import 'variables.scss';
 @import 'mixins.scss';
-@import 'portfolio.scss';
+// @import 'portfolio.scss';
 // $camouflage-color: #343d23;
 $camouflage-color: #252b19;
 // $camouflage-color1: #596450; //gray
@@ -33,7 +33,7 @@ body {
     width: 100%;
     height: 100%;
     color: white;
-    background: url('../img/intro-bg_alt.jpg') bottom center scroll;
+    background: url('../img/intro-bg_alt1.jpg') bottom center scroll;
     background-color: black;
 }
 
@@ -111,16 +111,12 @@ a {
         }
     }
     @media(min-width:992px) {
-        // padding-top: 20px;
-        // padding-bottom: 20px;
         -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
         transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
         letter-spacing: 1px;
         border-bottom: none;
         background: transparent;
         &.navbar-shrink {
-            // padding-top: 10px;
-            // padding-bottom: 10px;
             border-bottom: 1px solid fade-out(white, .7);
             background: black;
         }
@@ -203,42 +199,27 @@ a {
     padding-bottom: 200px;
 }
 
-// #about {
-//     background: url('../img/Texture3.jpg') no-repeat center center scroll; // background-color: $camouflage-color;
-//     // background-color: $camouflage-color; // -webkit-background-size: cover;
-//     // -moz-background-size: cover;
-//     // -o-background-size: cover;
-//     // background-size: cover;
-//     /* Create the parallax scrolling effect */
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
 .download-section {
     color: white;
     background: url('../img/photo4.jpg') no-repeat center center scroll;
     background-color: black;
-    background-size: cover;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; // /* Create the parallax scrolling effect */
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
     position: relative;
 }
 
-#map.text-center {
-    // width: 100%;
+#map {
     height: 400px;
 }
 
-// #map_info {
-//   background-color: $camouflage-color;
-// }
 #contact {
-    background: url('../img/gray.jpg') no-repeat center center scroll; // background-color: #222;/* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../img/wall.jpg') no-repeat center center scroll; // // background-color: #222;
+    // /* Create the parallax scrolling effect */
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     @include media-breakpoint-up(lg) {
@@ -260,11 +241,7 @@ a {
             column-count: 1;
             height: auto;
         }
-        color: black; // .card-title {
-        //     border-style: solid;
-        //     border-width: medium;
-        //     border-radius: 5px;
-        // }
+        color: black;
         .card-text {
             a {
                 color: white;
@@ -289,19 +266,10 @@ a {
         @include media-breakpoint-up(lg) {
             -webkit-column-count: 4;
             column-count: 4;
-        } // .card-img{
-        //     // height: 10%;
-        //     width: 50%;
-        // }
+        }
     }
 }
 
-// @media(min-width:992px) {
-//     .content-section {
-//         padding-top: 200px;
-//         padding-bottom: 200px;
-//     }
-// }
 .btn {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -405,6 +373,10 @@ img::-moz-selection {
     background: rgba($black, .8);
 }
 
+.overlay-bg-med {
+    background: rgba($black, .7);
+}
+
 .overlay-bg-light {
     background: rgba($black, .5);
 }
@@ -440,30 +412,43 @@ img::-moz-selection {
     height: 30px;
 }
 
-.showcase {
-    background: url('../img/wall51.jpg') no-repeat center center scroll;
+.about {
+    background: url('../img/wall51.jpg') center;
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; // position: relative;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover; 
+    // position: relative;
     background-color: black;
-    .showcase-text {
+    .about-text {
         padding: 3rem;
     }
-    .showcase-img {
+    .about-img {
         min-height: 30rem;
         background-position: center;
         background-size: cover;
     }
     @media (min-width: 768px) {
-        .showcase-text {
+        .about-text {
             padding: 7rem;
         }
     }
 }
 
-.features-icons {
+.features {
+    padding-top: 3rem;
+    padding-bottom: 3rem; // background: url('../img/gray.jpg') no-repeat center center scroll; 
+    // // background-color: #222;
+    // /* Create the parallax scrolling effect */
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // position: relative;
+}
+
+.services {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
