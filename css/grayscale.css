@@ -441,11 +441,15 @@ img::-moz-selection {
 .features {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  position: relative;
 }
 
 .services {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  background: url("../img/intro-bg_old.jpg") no-repeat center center scroll;
+  background-size: cover;
+  position: relative;
 }
 
 .vk {
