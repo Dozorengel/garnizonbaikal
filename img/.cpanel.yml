@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/var/www/u0102465/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp css/grayscale.css $DEPLOYPATH
+    - /bin/cp /var/www/u0102465/repositories/garnizonbaikal/index.html $DEPLOYPATH
+    - /bin/cp /var/www/u0102465/repositories/garnizonbaikal/css/grayscale.css $DEPLOYPATH
