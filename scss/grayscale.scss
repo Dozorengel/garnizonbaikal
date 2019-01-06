@@ -1,14 +1,8 @@
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-//
-// Grid mixins
-//
+// @import "bootstrap/functions";
+// @import "bootstrap/variables";
 @import "bootstrap/mixins/breakpoints";
-@import 'variables.scss';
-@import 'mixins.scss';
-// @import 'portfolio.scss';
-// $camouflage-color: #343d23;
-$camouflage-color: #252b19;
+$camouflage-color: #343d23;
+// $camouflage-color: #252b19;
 // $camouflage-color1: #596450; //gray
 /* font converted using font-converter.net. thank you! */
 
@@ -68,11 +62,11 @@ p {
 a {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    color: $primary;
+    color: $camouflage-color;
     &:focus,
     &:hover {
         text-decoration: none;
-        color: darken($primary, 20%);
+        color: darken($camouflage-color, 20%);
     }
 }
 
@@ -284,15 +278,15 @@ a {
 }
 
 .btn-default {
-    color: $white;
-    border: 1px solid $white;
+    color: white;
+    border: 1px solid white;
     background-color: transparent;
     &:focus,
     &:hover {
         color: black;
-        border: 1px solid $white;
+        border: 1px solid white;
         outline: none;
-        background-color: $white;
+        background-color: white;
     }
 }
 
@@ -373,15 +367,15 @@ img::-moz-selection {
 }
 
 .overlay-bg {
-    background: rgba($black, .8);
+    background: rgba(black, .8);
 }
 
 .overlay-bg-med {
-    background: rgba($black, .7);
+    background: rgba(black, .7);
 }
 
 .overlay-bg-light {
-    background: rgba($black, .5);
+    background: rgba(black, .5);
 }
 
 //--------- End video Area -------------//
