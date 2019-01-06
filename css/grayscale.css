@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Grayscale v4.0.0 (https://startbootstrap.com/template-overviews/grayscale)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
+ */
+
 /* font converted using font-converter.net. thank you! */
 body {
   font-family: 'Jura', sans-serif;
@@ -14,7 +20,12 @@ html {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 35px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -294,20 +305,10 @@ footer p {
   margin: 0;
 }
 
-::-moz-selection {
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-  text-shadow: none;
-}
-
 ::selection {
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
   text-shadow: none;
-}
-
-img::-moz-selection {
-  background: transparent;
 }
 
 img::selection {

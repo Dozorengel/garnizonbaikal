@@ -26,7 +26,6 @@ $camouflage-color: #252b19;
 //     font-weight: normal;
 //     font-style: normal;
 // }
-
 body {
     font-family: 'Jura', sans-serif;
     position: relative;
@@ -42,7 +41,12 @@ html {
     height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     // font-family: 'Jura', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0 0 35px;
     letter-spacing: 1px;
@@ -189,7 +193,6 @@ a {
 .content-section {
     padding-top: 100px;
     padding-bottom: 100px;
-
     .list-inline-item {
         padding-top: 10px;
     }
@@ -297,7 +300,6 @@ a {
 //     display: block;
 //     margin-bottom: 20px;
 // }
-
 footer {
     padding: 0 0 30px 0;
     p {
@@ -439,8 +441,7 @@ img::-moz-selection {
 
 .features {
     padding-top: 3rem;
-    padding-bottom: 3rem; 
-    // background: url('../img/gray.jpg') no-repeat center center scroll; 
+    padding-bottom: 3rem; // background: url('../img/gray.jpg') no-repeat center center scroll; 
     // // background-color: #222;
     // /* Create the parallax scrolling effect */
     // background-attachment: fixed;
@@ -453,7 +454,7 @@ img::-moz-selection {
 .services {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background: url('../img/intro-bg_old.jpg') no-repeat center center scroll; 
+    background: url('../img/intro-bg_old.jpg') no-repeat center center scroll;
     background-size: cover;
     position: relative;
 }
