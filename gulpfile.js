@@ -55,17 +55,24 @@ gulp.task('minifyimg', function(cb) {
 
   // logo
   gulp.src([
-    './img/logo/*',
-  ])
-  .pipe(imagemin())
-  .pipe(gulp.dest('./public/images/logo'))
+      './img/logo/*',
+    ])
+    .pipe(imagemin())
+    .pipe(gulp.dest('./public/images/logo'))
 
   // portfolio
   gulp.src([
-    './img/portfolio/*'
-  ])
-  .pipe(imagemin())
-  .pipe(gulp.dest('./public/images/portfolio'))
+      './img/portfolio/*'
+    ])
+    .pipe(imagemin())
+    .pipe(gulp.dest('./public/images/portfolio'))
+
+  // portfolio fullsize
+  gulp.src([
+      './img/portfolio/fullsize/*'
+    ])
+    .pipe(imagemin())
+    .pipe(gulp.dest('./public/images/portfolio/fullsize'))
 
   cb();
 
