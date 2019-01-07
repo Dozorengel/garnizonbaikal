@@ -7,6 +7,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const imagemin = require('gulp-imagemin');
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function(cb) {
@@ -37,6 +38,34 @@ gulp.task('vendor', function(cb) {
       './node_modules/jquery.easing/*.js'
     ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
+
+  cb();
+
+});
+
+// Minify images
+gulp.task('minifyimg', function(cb) {
+
+  // images
+  gulp.src([
+      './img/*',
+    ])
+    .pipe(imagemin())
+    .pipe(gulp.dest('./public/images'))
+
+  // logo
+  gulp.src([
+    './img/logo/*',
+  ])
+  .pipe(imagemin())
+  .pipe(gulp.dest('./public/images/logo'))
+
+  // portfolio
+  gulp.src([
+    './img/portfolio/*'
+  ])
+  .pipe(imagemin())
+  .pipe(gulp.dest('./public/images/portfolio'))
 
   cb();
 
@@ -108,7 +137,7 @@ function watchFiles() {
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
-gulp.task("default", gulp.parallel('vendor', css, js));
+gulp.task("default", gulp.parallel('vendor', css, js, 'minifyimg'));
 
 // dev task
 gulp.task("dev", gulp.parallel(watchFiles, browserSync));

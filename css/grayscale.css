@@ -1,4 +1,10 @@
 /* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: 'Jura';
+  font-display: swap;
+  src: local("Jura"), url(https://fonts.gstatic.com/s/jura/v9/z7NbdRfiaC4VXcBJURRD.woff2) format("woff2");
+}
+
 body {
   font-family: 'Jura', sans-serif;
   position: relative;
