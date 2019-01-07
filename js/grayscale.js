@@ -70,7 +70,8 @@
       tClose: 'Закрыть (Esc)', 
       tPrev: 'Назад (Стрелка влево)',
       tNext: 'Вперед (Стрелка вправо)',
-      tCounter: '<span class="mfp-counter">%curr% из %total%</span>'
+      tCounter: '<span class="mfp-counter">%curr% из %total%</span>',
+      tLoading: 'Загрузка...',
     },
     image: {
       tError: '<a href="%url%">Фото</a> не получается загрузить.'

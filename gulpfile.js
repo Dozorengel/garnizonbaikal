@@ -53,13 +53,6 @@ gulp.task('minifyimg', function(cb) {
     .pipe(imagemin())
     .pipe(gulp.dest('./public/images'))
 
-  // logo
-  gulp.src([
-      './img/logo/*',
-    ])
-    .pipe(imagemin())
-    .pipe(gulp.dest('./public/images/logo'))
-
   // portfolio
   gulp.src([
       './img/portfolio/*'
