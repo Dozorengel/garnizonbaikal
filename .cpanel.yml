@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/var/www/u0947166/public_html/
+    - export DEPLOYPATH=/var/www/u0947166/public_html/xn----7sbbadj3ahnkmpcn0a.xn--p1ai
     - /bin/cp -R * $DEPLOYPATH
